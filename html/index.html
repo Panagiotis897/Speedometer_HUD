@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speedometer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="icon-wrapper">
+                <svg class="gauge-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m12 14 4-4"></path>
+                    <path d="M3.34 19a10 10 0 1 1 17.32 0"></path>
+                </svg>
+            </div>
+            <h2 class="title">Speedometer</h2>
+        </div>
+        <div class="content">
+            <div class="speed">
+                <div class="label">Speed</div>
+                <div class="value">
+                    <span class="speed-number">0</span>
+                    <span class="unit">km/h</span>
+                </div>
+            </div>
+            <div class="gear">
+                <div class="label">Gear</div>
+                <div class="value">N</div>
+            </div>
+            <div class="rpm">
+                <div class="label">RPM</div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 0%;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="fuel-section">
+            <div class="label">Fuel</div>
+            <div class="progress-bar fuel">
+                <div class="progress" style="width: 0%;"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
